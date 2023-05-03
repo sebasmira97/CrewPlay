@@ -10,7 +10,7 @@
     <?php require 'views/header.php' ?>
 
     <div id="home">
-        <h1 style="color: yellow;">Busca Ayuda</h1>
+        <h1>Lista de Usuarios</h1><br>
 
         <table width="100%" style="display: block;">
             <thead>

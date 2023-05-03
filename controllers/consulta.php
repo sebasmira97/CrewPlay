@@ -51,8 +51,16 @@
 
         }
 
-        function eliminarUsuario(){
+        function eliminarUsuario($param = null){
+            $id = $param[0];
 
+            if($this->model->delete($id)){
+                $this->view->mensaje = "Usuario borrado con exito";
+            }else{
+                $this->view->mensaje = "No fue posible eliminar el usuario";
+            }
+            
+            $this->render();
         }
 
     }

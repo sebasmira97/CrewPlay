@@ -55,9 +55,20 @@
         }
 
         public function update($item){
+            $query = $this->db->connect()->prepare('UPDATE usuarios SET nombre = :nombre, celular = :celular, password = :password WHERE id = :id');
             try {
-                $query = $this->db->connect()->prepare('UPDATE usuarios SET nombre = :nombre, celular = :celular, password = :password WHERE id = :id');
                 $query->execute(['nombre'=> $item['nombre'], 'celular'=> $item['celular'], 'password'=> $item['password'], 'id'=> $item['id']]);
+                //echo "esto ejecuto";
+                return true;
+            } catch (PDOException $e) {
+                return false;
+            }
+        }
+
+        public function delete($id){
+            $query = $this->db->connect()->prepare("DELETE FROM usuarios WHERE id = :id");
+            try {
+                $query->execute(['id' => $id]);
                 //echo "esto ejecuto";
                 return true;
             } catch (PDOException $e) {
