@@ -24,14 +24,14 @@
   nav {
     display: flex;
     justify-content: space-between;
-    padding: 0 24px;
+    padding: 0 36px;
     border-bottom: 1px solid var(--very-light-pink);
   }
   .menu {
     display: none;
   }
   .logo {
-    width: 100px;
+    width: 200px;
   }
   .navbar-left ul,
   .navbar-right ul {
@@ -46,7 +46,7 @@
     display: flex;
   }
   .navbar-left ul {
-    margin-left: 12px;
+    margin-left: 60px;
   }
   .navbar-left ul li a,
   .navbar-right ul li a {

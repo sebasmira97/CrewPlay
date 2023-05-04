@@ -18,7 +18,7 @@
         <img src="<?php echo constant('URL'); ?>public/icons/icon_menu.svg" alt="menu" class="menu">
 
         <div class="navbar-left">
-        <img src="<?php echo constant('URL'); ?>public/logos/logo_yard_sale.svg" alt="logo" class="logo">
+        <img src="<?php echo constant('URL'); ?>public/logos/logo_propi3dad.svg" alt="logo" class="logo">
 
         <ul>
             <li>
@@ -31,10 +31,7 @@
             <a href="<?php echo constant('URL'); ?>consulta">Consulta</a>
             </li>
             <li>
-            <a href="<?php echo constant('URL'); ?>consulta">Consulta</a>
-            </li>
-            <li>
-            <a href="/">Others</a>
+            <a href="<?php echo constant('URL'); ?>registrarUsuario">Registrar</a>
             </li>
         </ul>
         </div>
@@ -42,9 +39,6 @@
         <div class="navbar-right">
         <ul>
             <li class="navbar-email">propi3dad@example.com</li>
-            <li class="navbar-shopping-cart">
-            <img src="<?php echo constant('URL'); ?>public/icons/icon_shopping_cart.svg" alt="shopping cart">
-            <div>2</div>
             </li>
         </ul>
         </div>
@@ -52,7 +46,7 @@
         <div class="desktop-menu inactive">
             <ul>
             <li>
-                <a href="/" class="title">My orders</a>
+                <a href="<?php echo constant('URL'); ?>login" class="title">Login</a>
             </li>
         
             <li>
@@ -158,21 +152,6 @@
       </div>
     </aside>
 
-    <aside id="productDetail" class="inactive">
-      <div class="product-detail-close">
-        <img src="./icons/icon_close.png" alt="close">
-      </div>
-      <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
-      <div class="product-info">
-        <p>$35,00</p>
-        <p>Bike</p>
-        <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
-        <button class="primary-button add-to-cart-button">
-          <img src="./icons/bt_add_to_cart.svg" alt="add to cart">
-          Add to cart
-        </button>
-      </div>
-    </aside>
 
     <script src="<?php echo constant('URL'); ?>public/javascript/main.js"></script>
 </body>

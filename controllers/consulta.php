@@ -55,12 +55,16 @@
             $id = $param[0];
 
             if($this->model->delete($id)){
-                $this->view->mensaje = "Usuario borrado con exito";
+                //$this->view->mensaje = "Usuario borrado con exito";
+                $mensaje = "Usuario borrado con exito";
             }else{
-                $this->view->mensaje = "No fue posible eliminar el usuario";
+                //$this->view->mensaje = "No fue posible eliminar el usuario";
+                $mensaje = "No fue posible eliminar el usuario";
             }
             
-            $this->render();
+            //$this->render();
+
+            echo $mensaje;
         }
 
     }

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="public/styles/header.css">
+    <link rel="stylesheet" href="<?php echo constant('URL'); ?>public/styles/header.css">
 
     <title>Propiedades</title>
 </head>
@@ -24,16 +24,9 @@
             <div>
               <p>$120,00</p>
               <p>Bike</p>
-            </div>
-            <figure>
-              <img src="public/icons/bt_add_to_cart.svg" alt="">
-            </figure>
-          </div>
         </div>
 
       </div>
     </section> 
-
-    <script src="public/javascript/main.js"></script>
 </body>
 </html>
